@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        
+        let age=[19,36,24,21,20,22];
+        console.log(age);  
+        //index add 
+        console.log(age[3]);
+
+        let names = ["Usman","Yasir", "Ahmad", "Ali", "Adeel",21,18,16,14,16];
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[4]);
+        console.log(names[2]);
+        console.log(names);
+
+        //name show in the last in the array
+        names.push("Khan");
+
+        //name show in the start in the array
+        names.unshift("Bhutta");
+        console.log(names);
+
+        //mame remove from array that show in the array at last 
+        names.pop(); 
+        console.log(names);
+
+        //mame remove from array that show in the array at start
+        names.shift();
+        console.log(names);
+
+        console.log(names.length)
+
+        console.log(names.indexOf("Ahmad"));   
+
+        //map fun usning Arrow
+        names.map((nm)=>{
+            console.log(nm);
+        });
+
+        
+        let frnAge = [23,22,21,20,24,25,26,22,21,20,17];
+        frnAge[2]=19;
+        frnAge.map((fr)=>{
+            if(fr>=18){
+            console.log(fr);}
+        });
+
+        //using Filters
+        let eligibleAges = frnAge.filter((fr)=>{
+            if(fr >= 18) {
+            return fr;
+        }
+        });
+        console.log(eligibleAges);
+
+        let users = [];
+        for(let i = 1; i <= 5; i++){
+            let username = prompt("Enter Your Username");
+            users.push(username);
+        }
+        console.log(users);
+
+        //Objects
+
+
+    </script>
+</body>
+</html>
